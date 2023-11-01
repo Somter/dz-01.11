@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        body{   
+            background-color: rgb(22, 22, 22);  
+        }   
+
+        .first_1{
+            background-color: white;
+            width: 120px;       
+            height: 7px; 
+            border-radius: 50px;
+            margin-left: 700px;
+            margin-top: 250px;
+            animation: fir 3s infinite;
+        }
+
+        .second_1{
+            background-color: white;
+            width: 120px;       
+            height: 7px; 
+            border-radius: 50px;
+            margin-left: 700px;
+            margin-top: 15px;
+            animation: sec 3s infinite;
+        }
+
+        .first_2{
+            background-color: white;
+            width: 120px;       
+            height: 7px; 
+            border-radius: 50px;
+            margin-left: 700px;
+            margin-top: 15px;
+            animation: fir 3s infinite;
+        }
+
+        .second_2{
+            background-color: white;
+            width: 120px;       
+            height: 7px; 
+            border-radius: 50px;
+            margin-left: 700px;
+            margin-top: 15px;
+            animation: sec 3s infinite;
+        }
+
+        .first_3{
+            background-color: white;
+            width: 120px;       
+            height: 7px; 
+            border-radius: 50px;
+            margin-left: 700px;
+            margin-top: 15px;
+            animation: fir 3s infinite;
+        }
+
+        .second_3{
+            background-color: white;
+            width: 120px;       
+            height: 7px; 
+            border-radius: 50px;
+            margin-left: 700px;
+            margin-top: 15px;
+            animation: sec 2s infinite;
+        }
+
+        .load{
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;   
+            margin-left: 703px; 
+            margin-top: 35px;
+            animation: loadin 3s infinite;
+        }
+
+        @keyframes fir{
+            0%{
+                transform: scaleX(1); 
+            }
+            50% {
+                transform: scaleX(1.5); 
+            }
+            100%{
+                transform: scaleX(1);
+            }
+
+        }
+
+        @keyframes sec{
+            0%{
+                transform: scaleX(1.5); 
+            }
+            50% {
+                transform: scaleX(1); 
+            }
+            100%{
+                transform: scaleX(1.5);
+            }
+
+        }
+
+        @keyframes loadin{
+            0%{
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100%{
+                opacity: 1;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+        <div class="first_1"></div>
+        <div class="second_1"></div>
+        <div class="first_2"></div> 
+        <div class="second_2"></div>
+        <div class="first_3"></div> 
+        <div class="second_3"></div>  
+        <div class="load">LOADING...</div> 
+</body>
+</html>
