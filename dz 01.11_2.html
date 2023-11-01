@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("hubble_carina-scaled.jpeg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .mars {
+            position: absolute;
+            top: 150px;
+            left: 300px;
+            width: 250px;
+            height: 250px;
+            background: url('pngwing.com.png') no-repeat center center;
+            background-size: cover;
+            margin-top: 50px;
+            margin-left: 10px;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            margin-bottom: 30px;
+            float: left; 
+        }
+
+        .ball1 {
+            position: absolute;
+            top: 80px;
+            left: 550px;
+            background-color: rgb(253, 117, 67);
+            display: inline-block;
+            margin-top: 50px;
+            margin-left: 20px;
+            padding: 50px;
+            height: 38px;
+            border-radius: 50%;
+        }
+
+        .earth{
+            position: absolute;
+            top: 200px;
+            left: 700px;
+            width: 200px;
+            height: 200px;
+            background: url("pngwing2.com.png") no-repeat center center;
+            background-size: cover;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+
+        }
+
+        .ball2 {
+             position: absolute;
+             left: 700px;
+             background-color: greenyellow;
+             text-align: center;
+             display: inline-block;
+             margin-top: 80px;
+             margin-left: 120px; 
+             padding: 20px;
+             padding-top: 35px;
+             padding-right: 30px;
+             padding-left: 30px;
+             height: 50px;
+             border-radius: 100%;
+        }
+
+        .earth:hover{
+            animation: earth 2s;
+        }
+
+
+        .ball2:hover{
+            animation:  planet_ball2 2s;
+        }
+
+        .mars:hover {
+            animation: planet 2s;
+        }
+        .ball1:hover{
+            animation: planet_ball 2s; 
+        }
+
+        
+        @keyframes planet {
+            0% {
+                transform: translateY(0);
+            }
+            30% {
+                transform: translateY(-30px);
+            }
+            30% {
+                transform: scaleY(0.9);
+            }
+            50% {
+                transform: translateY(-60px);
+            }
+            60% {
+                transform: scaleY(0.9);
+            }
+            80% {
+                transform: translateY(-30px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes  planet_ball2  {
+            0% {
+                transform: translateY(0);
+            }
+            30% {
+                transform: translateY(-30px);
+                background-color: rgb(143, 212, 39);
+                box-shadow: 0 0 20px 5px rgb(96, 140, 30);
+            }
+            30% {
+                transform: scaleY(0.9);
+            }
+            50% {
+                transform: translateY(-60px);
+            }
+            60% {
+                transform: scaleY(0.9);
+            }
+            80% {
+                transform: translateY(-30px);
+                background-color: rgb(143, 212, 39);
+                box-shadow: 0 0 20px 5px rgb(96, 140, 30);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes planet {
+            0% {
+                transform: translateY(0);
+            }
+            30% {
+                transform: translateY(-30px);
+            }
+            30% {
+                transform: scaleY(0.9);
+            }
+            50% {
+                transform: translateY(-60px);
+            }
+            60% {
+                transform: scaleY(0.9);
+            }
+            80% {
+                transform: translateY(-30px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes planet_ball{
+            0% {
+                transform: translateY(0);
+            }
+            30% {
+                transform: translateY(-30px);
+                background-color: rgb(246, 82, 23);
+                box-shadow: 0 0 20px 5px rgb(247, 172, 144);
+            }
+            30% {
+                transform: scaleY(0.9);
+            }
+            50% {
+                transform: translateY(-60px);
+            }
+            60% {
+                transform: scaleY(0.9);
+            }
+            80% {
+                transform: translateY(-30px);
+                background-color:  rgb(252, 104, 51);
+                box-shadow: 0 0 5px 5px rgb(247, 172, 144);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="mars"></div>
+        <div class="ball1">MARS</div>
+        <div class="ball2">MOON</div>
+        <div class="earth"></div>
+</body>
+</html>
